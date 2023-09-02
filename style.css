@@ -1,0 +1,116 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Evita a barra de rolagem horizontal no PC */
+}
+
+/* Estilos do vídeo de fundo para PC */
+video.pc-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    display: block; /* Mostra o vídeo apenas em telas maiores */
+}
+
+/* Estilos do vídeo de fundo para dispositivos móveis */
+video.mobile-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    display: none; /* Oculta o vídeo em dispositivos móveis por padrão */
+}
+
+/* Estilos do perfil */
+.card {
+    background: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente para melhor legibilidade */
+    padding: 16px;
+    margin-top: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    max-width: 300px; /* Defina a largura máxima desejada */
+    position: relative;
+    z-index: 1;
+}
+
+.profile-header {
+    text-align: center;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8);
+}
+
+.profile-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: white; /* Cor do texto do nome */
+}
+
+.profile-username {
+    font-style: italic;
+    color: #ccc; /* Cor do texto do nome de usuário */
+    margin-top: 5px;
+}
+
+/* Estilos das redes sociais */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: white; /* Cor dos ícones das redes sociais */
+    font-size: 24px;
+}
+
+/* Adicione estilos específicos para cada rede social */
+.social-links a[href*="discord.com"] {
+    color: #7289DA;
+}
+
+.social-links a[href*="instagram.com"] {
+    color: #E4405F;
+}
+
+/* Estilos responsivos para dispositivos móveis */
+@media (max-width: 768px) {
+    body {
+        background: url('starrynight.jpg') no-repeat fixed;
+        background-size: cover;
+    }
+    video.pc-bg {
+        display: none; /* Oculta o vídeo de PC em dispositivos móveis */
+    }
+    video.mobile-bg {
+        display: block; /* Mostra o vídeo de dispositivos móveis */
+    }
+
+    /* Estilos responsivos para conteúdo de produto */
+    .produto-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
