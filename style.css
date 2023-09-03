@@ -95,11 +95,19 @@ video.mobile-bg {
 }
 
 /* Estilos responsivos para dispositivos móveis */
+/* Estilos do fundo para dispositivos móveis */
 @media (max-width: 768px) {
     body {
-        background: url('wppgalax.jpg') no-repeat fixed;
+        background-image: url('wppgalax.jpg');
+        background-repeat: no-repeat;
         background-size: cover;
+        background-attachment: fixed;
     }
+    video.pc-bg {
+        display: none; /* Oculta o vídeo em dispositivos móveis */
+    }
+}
+
     video.pc-bg {
         display: none; /* Oculta o vídeo de PC em dispositivos móveis */
     }
@@ -113,4 +121,3 @@ video.mobile-bg {
         flex-direction: column;
         align-items: center;
     }
-}
