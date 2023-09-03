@@ -99,18 +99,12 @@ video.mobile-bg {
 @media (max-width: 768px) {
     body {
         background-image: url('wppgalax.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
     }
     video.pc-bg {
         display: none; /* Oculta o vídeo em dispositivos móveis */
     }
 }
 
-    video.pc-bg {
-        display: none; /* Oculta o vídeo de PC em dispositivos móveis */
-    }
     video.mobile-bg {
         display: block; /* Mostra o vídeo de dispositivos móveis */
     }
